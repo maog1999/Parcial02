@@ -93,39 +93,4 @@ database.ref('Nominadas/voto').on('value', function(data){
         });
     });
 });
-/*database.ref('Nominadas/voto').on('value', function(data){
-   
-    data.forEach(nomis =>{
-        let nameP = nomis.key;
-        console.log(nameP);
-        database.ref('Nominadas/voto/'+nameP).on('value', function(info){
-            //console.log("entro");
-
-            let nRating =0;
-            let nChildPelis = 0;
-            info.forEach(function(user){
-                nChildPelis = user.numChildren();
-                let k = user.key;
-                let v = user.val();
-                //console.log(v);
-                
-                nRating = v.rate;
-                console.log(nRating + " 0");
-
-                nPeliculas = nPeliculas + nRating;
-                console.log(nPeliculas + " 1");
-
-                pelisTotal = nChildPelis + pelisTotal;
-                console.log(pelisTotal + " 2");
-            });
-            ratingPromedio = (nPeliculas/pelisTotal);
-            console.log(ratingPromedio + " Prom")
-            let actuPeli ={
-                nameP : nameP,
-                rate : ratingPromedio,
-            }
-            database.ref('Nominadas/movies/'+nameP).set(actuPeli);
-        });
-    });
-});*/
 
