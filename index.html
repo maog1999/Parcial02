@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="CSS/index.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="pelisContainer">
+  <img src="imagenes/logoCC.png" id="img1">
+  <h4 id="tittle">Escoge tu película favorita</h3>
+  </div>
+
+    <div class="pelisContainer" id="pelisContainer">
+        <!-- Espacio para crear las pelicuals-->
+    </div>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase.js"></script>
+
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDdkYC0cI_A0eeucgt3Ay7VQ4JInoxyZuo",
+    authDomain: "parcial02-8ef88.firebaseapp.com",
+    projectId: "parcial02-8ef88",
+    storageBucket: "parcial02-8ef88.appspot.com",
+    messagingSenderId: "909743868979",
+    appId: "1:909743868979:web:b69c3da39a6e2bbe992746"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script>const database = firebase.database()</script>
+<script src="JS/pelicula.js"></script>
+<script src="JS/index.js"></script>
+</html>
